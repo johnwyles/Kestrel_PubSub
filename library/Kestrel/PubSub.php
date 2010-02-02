@@ -1,4 +1,7 @@
 <?php
+
+// FOO
+
 /**
  * Kestrel_PubSub: A very simple Publisher / Subscriber implementation
  *
