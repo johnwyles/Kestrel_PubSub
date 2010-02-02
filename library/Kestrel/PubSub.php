@@ -108,6 +108,17 @@ class Kestrel_PubSub
     }
 
     /**
+     * Remove the subscribers for a particular subject
+     *
+     * @param string $subject The subject
+     * @return void
+     */
+    public static function removeSubscribers($subject)
+    {
+        unset(self::$_callbacks[$subject]);
+    }
+
+    /**
      * Get all of the subjects
      *
      * @return array The subjects
@@ -128,22 +139,11 @@ class Kestrel_PubSub
     }
 
     /**
-     * Remove the subscribers for a particular subject
-     *
-     * @param string $subject The subject
-     * @return void
-     */
-    public static function removeSubscribers($subject)
-    {
-        unset(self::$_callbacks[$subject]);
-    }
-
-    /**
      * Remove all subscribers for all subjects
      *
      * @return void
      */
-    public static function removeAllSubscribers()
+    public static function removeAllSubjectSubscribers()
     {
         self::$_callbacks = array();
     }
