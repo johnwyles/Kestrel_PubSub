@@ -1,4 +1,12 @@
 <?php
+/**
+ * Kestrel PubSub
+ *
+ * @category Kestrel
+ * @package Kestrel_PubSub
+ * @subpackage Test
+ * @author John Wyles <john@johnwyles.com>
+ */
 
 function testAutoloader($className)
 {

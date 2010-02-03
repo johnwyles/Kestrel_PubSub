@@ -22,6 +22,7 @@ require_once 'PubSubTest.php';
 /**
  * Kestrel_PubSub: All Tests
  *
+ * @category Kestrel
  * @package Kestrel_PubSub
  * @subpackage Test
  * @version $Id: $

@@ -1,6 +1,6 @@
 <?php
 /**
- * Kestrel: AllTests
+ * Kestrel
  *
  * @category Kestrel
  * @package Kestrel
@@ -26,6 +26,7 @@ require_once 'Kestrel/AllTests.php';
 /**
  * Kestrel: AllTests
  *
+ * @category Kestrel
  * @package Kestrel
  * @subpackage Test
  * @version $Id: $
