@@ -1,10 +1,26 @@
 Kestrel_PubSub
 ============
-Kestrel_PubSub is a library for modeling the Publisher / Subscriber pattern for callback routines
+Kestrel_PubSub is a library for modeling the Publish / Subscribe pattern
+for callback routines
+
 
 CONTACT
 =======
 John Wyles <john@johnwyles.com>
 
+
 USAGE
 =====
+If you have a an object of tpy Foo with the instance method bar subscribing
+the callback to the subject "hello_world" would be done as follows:
+
+  Kestrel_PubSub::subscribe('hello_world', $foo, 'bar');
+
+Later, publishing to the subject, "hello_world", could be done simply:
+
+  Kestrel_PubSub::publish('hello_world');
+
+
+CHANGES
+=======
+* 2010-02-02: Kestrel_PubSub released
