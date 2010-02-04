@@ -61,7 +61,7 @@ class Kestrel_PubSubTest extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Kestrel_PubSub::getSubscribers
+     * @covers Kestrel_PubSub::getAllSubjects
      */
     public function testGetAllSubjects()
     {
